@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head >
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<meta name="keywords" content="ceramics, pottery, clay, bazaar ceramics, gallery">
+<!-- <meta http-equiv="Refresh" content="5"> -->
+
+<title>Bazaar Ceramics - Members order form</title>
+
+
+<link rel="stylesheet" href="../css/stylesheet.css">
+<link rel="stylesheet" href="../css/layout.css">
+<link rel="stylesheet" href="../css/mobile.css">
+<link rel="stylesheet" href="../css/tablet.css">
+<link rel="stylesheet" href="../css/laptop.css">
+<script type="text/javascript" src="../js/querystring.js"></script>
+</head>
+
+<body onload="getQueryString();">
+<div class ="col-12 wrapper">
+	<!-- Wrapper line -->
+ 
+	
+  <div class="col-12 header" id="pageHeader"></div>
+	<!-- Page heading line -->
+
+	
+	<div class="col-12 content">
+	
+		<div class="image-content">
+			
+		
+			<!--	<table class="red">
+					<tr class="red">
+						<td class= "red"><img src= alt="Copper red bowl" name= "copperRed"></td>
+						<td class= "red"><img src="../images/bcpot002_r1_c2.jpg" alt="Copper red bowl" name= "copperRed"></td>
+						<td class= "red"><img src="../images/bcpot002_r1_c3.jpg" alt="Copper red bowl" name= "copperRed"></td>
+						<td class= "red"><img src="../images/bcpot002_r1_c4.jpg" alt="Copper red bowl" name= "copperRed"></td>
+						<td class= "red"><img src="../images/bcpot002_r1_c5.jpg" alt="Copper red bowl" name= "copperRed"></td>
+					</tr>
+					
+					<tr class="red">
+						<td class= "red"><img src="../images/bcpot002_r2_c1.jpg" alt="Copper red bowl" name= "copperRed"></td>
+						<td class= "red"><img src="../images/bcpot002_r2_c2.jpg" alt="Copper red bowl" name= "copperRed"></td>
+						<td class= "red"><img src="../images/bcpot002_r2_c3.jpg" alt="Copper red bowl" name= "copperRed"></td>
+						<td class= "red"><img src="../images/bcpot002_r2_c4.jpg" alt="Copper red bowl" name= "copperRed"></td>
+						<td class= "red"><img src="../images/bcpot002_r2_c5.jpg" alt="Copper red bowl" name= "copperRed"></td>
+					</tr>
+					
+					<tr class="red">
+						<td class= "red"><img src="../images/bcpot002_r3_c1.jpg" alt="Copper red bowl" name= "copperRed"></td>
+						<td class= "red"><img src="../images/bcpot002_r3_c2.jpg" alt="Copper red bowl" name= "copperRed"></td>
+						<td class= "red"><img src="../images/bcpot002_r3_c3.jpg" alt="Copper red bowl" name= "copperRed"></td>
+						<td class= "red"><img src="../images/bcpot002_r3_c4.jpg" alt="Copper red bowl" name= "copperRed"></td>
+						<td class= "red"><img src="../images/bcpot002_r3_c5.jpg" alt="Copper red bowl" name= "copperRed"></td>
+					</tr>
+					
+					<tr class="red">
+						<td class= "red"><img src="../images/bcpot002_r4_c1.jpg" alt="Copper red bowl" name= "copperRed"></td>
+						<td class= "red"><img src="../images/bcpot002_r4_c2.jpg" alt="Copper red bowl" name= "copperRed"></td>
+						<td class= "red"><img src="../images/bcpot002_r4_c3.jpg" alt="Copper red bowl" name= "copperRed"></td>
+						<td class= "red"><img src="../images/bcpot002_r4_c4.jpg" alt="Copper red bowl" name= "copperRed"></td>
+						<td class= "red"><img src="../images/bcpot002_r4_c5.jpg" alt="Copper red bowl" name= "copperRed"></td>
+					</tr>	
+					
+				
+				</table> -->
+				
+				<div id= prodImage></div>
+				<script type="text/javascript" src="../js/redimg.js"></script>
+		</div>
+		<div class="form-content">
+		
+		
+		<form method="post" action="" onsubmit="validate(); return false">
+		
+		<table width="100%" border="1">
+		<tr>
+			<td>Order Item</td>
+			<td><input name="orderItem" id="orderItem" type="text" size="25" readonly></td>
+		</tr>
+		
+		<tr>
+			<td>Item Description</td>
+			<td><input name="itemDescription" id="itemDescription" type="text" size="25" readonly></td>
+		</tr>
+		
+		<tr>
+			<td>Quantity</td>
+			<td><input name="quantityBowl" id="quantityBowl" type="number" min="1" value="1"></td>
+		</tr>
+		
+		<tr>
+			<td>Price</td>
+			<td><input name="price" id="price" type="text" value="$" readonly></td>
+		</tr>
+		
+		<tr>
+			<td>Total Price</td>
+			<td><input type="text" name= "orderTotal" id="orderTotal" readonly ></td>
+		</tr>
+		
+		<tr>
+		<td>
+			<button class="redButton" type="button" onclick="calculateTotal()"> Calculate Total </button>
+			<button class="redButton" type="button" onclick="clearValues()"> Clear </button>
+			<input type="submit" name="submit" value="Submit">
+			</td>
+		</tr>
+		
+		<script type="text/javascript" src="../js/form.js"></script>
+		
+		
+		</form>
+		</div>
+		
+		
+		
+		
+	</div>
+	
+	
+	<div class="col-12 column-footer"><button class="exitButton" type="button" onclick="exitButton()">Close This Page </button> </div>
+	
+	
+	</div>
+	<!-- This is the main content line-->
+		
+</div>
+<!-- Wrapper ending tag -->
+</body>
+</html>
